@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тарифы — Kraken</title>
+<meta name="description" content="Тарифы Kraken VPN: Drift, Current и Abyss. Выбери глубину защиты.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none">
+        <path d="M16 3C9 3 4 8.5 4 15c0 4 1.8 6.8 3.2 9.3.5.9 1.8.7 2-.3.4-1.8 1-3.4 1.6-3.4.7 0 1 2.4 1.2 4.6.1 1 1.5 1.2 1.9.2.6-1.6 1.3-3.4 2.1-3.4s1.5 1.8 2.1 3.4c.4 1 1.8.8 1.9-.2.2-2.2.5-4.6 1.2-4.6.6 0 1.2 1.6 1.6 3.4.2 1 1.5 1.2 2-.3C26.2 21.8 28 19 28 15c0-6.5-5-12-12-12Z" stroke="#3fe0d0" stroke-width="1.6" stroke-linejoin="round"/>
+        <circle cx="12.5" cy="13" r="1.3" fill="#3fe0d0"/>
+        <circle cx="19.5" cy="13" r="1.3" fill="#3fe0d0"/>
+      </svg>
+      KRAKEN
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Главная</a>
+      <a href="servers.html">Сервера</a>
+      <a href="pricing.html" class="active">Тарифы</a>
+    </div>
+    <a href="#plans" class="btn btn-primary">Начать погружение</a>
+  </div>
+</nav>
+
+<div class="wrap" style="padding-top: 56px;" id="plans">
+
+  <div class="section-head" style="margin-bottom: 34px;">
+    <div class="eyebrow">Тарифы</div>
+    <h2>Выбери глубину защиты</h2>
+    <p>Чем глубже тариф — тем больше устройств, узлов мультихопа и функций обфускации. Отменить можно в любой момент.</p>
+  </div>
+
+  <div class="toggle-row">
+    <span class="toggle-label active" id="labelMonthly">Ежемесячно</span>
+    <div class="toggle" id="billingToggle"><div class="knob"></div></div>
+    <span class="toggle-label" id="labelYearly">Ежегодно</span>
+    <span class="save-badge">−32%</span>
+  </div>
+
+  <div class="plans">
+
+    <div class="plan-card">
+      <div class="plan-name">Drift</div>
+      <div class="plan-depth">0–200 м · Surface → Twilight</div>
+      <div class="plan-price"><span class="mono">$</span><span class="price-val" data-monthly="4.9" data-yearly="3.3">4.9</span><span> / мес</span></div>
+      <div class="plan-cycle-note billing-note">Оплата помесячно</div>
+      <ul class="plan-features">
+        <li>1 устройство одновременно</li>
+        <li>Базовый туннель WireGuard</li>
+        <li>350+ серверов в 40 странах</li>
+        <li>Kill switch</li>
+        <li>Поддержка по почте</li>
+      </ul>
+      <a href="#" class="btn btn-ghost">Выбрать Drift</a>
+    </div>
+
+    <div class="plan-card featured">
+      <div class="plan-tag">Оптимально</div>
+      <div class="plan-name">Current</div>
+      <div class="plan-depth">200–1000 м · до Midnight</div>
+      <div class="plan-price"><span class="mono">$</span><span class="price-val" data-monthly="8.9" data-yearly="6.1">8.9</span><span> / мес</span></div>
+      <div class="plan-cycle-note billing-note">Оплата помесячно</div>
+      <ul class="plan-features">
+        <li>6 устройств одновременно</li>
+        <li>Полный туннель + обфускация трафика</li>
+        <li>1 800+ серверов в 62 странах</li>
+        <li>Split tunneling</li>
+        <li>Приватный DNS-резолвер</li>
+        <li>Поддержка 24/7 в чате</li>
+      </ul>
+      <a href="#" class="btn btn-primary">Выбрать Current</a>
+    </div>
+
+    <div class="plan-card">
+      <div class="plan-name">Abyss</div>
+      <div class="plan-depth">Midnight zone · без дна</div>
+      <div class="plan-price"><span class="mono">$</span><span class="price-val" data-monthly="13.9" data-yearly="9.4">13.9</span><span> / мес</span></div>
+      <div class="plan-cycle-note billing-note">Оплата помесячно</div>
+      <ul class="plan-features">
+        <li>Неограниченно устройств</li>
+        <li>Мультихоп через 2 узла</li>
+        <li>Выделенный статический IP</li>
+        <li>Приоритетные серверы без очереди</li>
+        <li>Ранний доступ к новым зонам сети</li>
+        <li>Персональный менеджер поддержки</li>
+      </ul>
+      <a href="#" class="btn btn-ghost">Выбрать Abyss</a>
+    </div>
+
+  </div>
+
+  <section>
+    <div class="section-head" style="margin-bottom: 30px;">
+      <div class="eyebrow">Частые вопросы</div>
+      <h2>Прежде чем нырнуть</h2>
+    </div>
+    <div class="zones-grid">
+      <div class="zone-card">
+        <h3 style="font-size:16px;">Можно ли сменить тариф позже?</h3>
+        <p>Да, переход между Drift, Current и Abyss происходит мгновенно из личного кабинета, разница в цене пересчитывается пропорционально.</p>
+      </div>
+      <div class="zone-card">
+        <h3 style="font-size:16px;">Что если не подойдёт?</h3>
+        <p>Первые 7 дней — бесплатный пробный период на любом тарифе. Отмена в один клик, без вопросов.</p>
+      </div>
+      <div class="zone-card">
+        <h3 style="font-size:16px;">Какие способы оплаты доступны?</h3>
+        <p>Банковские карты и криптовалюта. Для тарифа Abyss доступна оплата по счёту для компаний.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer style="margin-top: 30px;">
+  <div class="wrap">
+    <div class="footer-bottom">
+      <span>© 2026 Kraken VPN</span>
+      <span>Сделано для тех, кто хочет остаться на глубине</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Сервера — Kraken</title>
+<meta name="description" content="Список серверов Kraken VPN по регионам. Поиск и фильтр по континентам.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none">
+        <path d="M16 3C9 3 4 8.5 4 15c0 4 1.8 6.8 3.2 9.3.5.9 1.8.7 2-.3.4-1.8 1-3.4 1.6-3.4.7 0 1 2.4 1.2 4.6.1 1 1.5 1.2 1.9.2.6-1.6 1.3-3.4 2.1-3.4s1.5 1.8 2.1 3.4c.4 1 1.8.8 1.9-.2.2-2.2.5-4.6 1.2-4.6.6 0 1.2 1.6 1.6 3.4.2 1 1.5 1.2 2-.3C26.2 21.8 28 19 28 15c0-6.5-5-12-12-12Z" stroke="#3fe0d0" stroke-width="1.6" stroke-linejoin="round"/>
+        <circle cx="12.5" cy="13" r="1.3" fill="#3fe0d0"/>
+        <circle cx="19.5" cy="13" r="1.3" fill="#3fe0d0"/>
+      </svg>
+      KRAKEN
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Главная</a>
+      <a href="servers.html" class="active">Сервера</a>
+      <a href="pricing.html">Тарифы</a>
+    </div>
+    <a href="pricing.html" class="btn btn-primary">Начать погружение</a>
+  </div>
+</nav>
+
+<div class="wrap" style="padding-top: 56px;">
+
+  <div class="section-head" style="margin-bottom: 34px;">
+    <div class="eyebrow">Сеть узлов</div>
+    <h2>Выбери точку погружения</h2>
+    <p>1 800+ серверов в 62 странах. Загрузка узла обновляется каждые 60 секунд — выбирай наименее занятый для лучшей скорости.</p>
+  </div>
+
+  <div class="servers-toolbar">
+    <div class="search-box">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="7"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <input type="text" id="searchInput" placeholder="Найти город или страну…">
+    </div>
+    <button class="filter-chip active" data-region="all">Все регионы</button>
+    <button class="filter-chip" data-region="europe">Европа</button>
+    <button class="filter-chip" data-region="americas">Америка</button>
+    <button class="filter-chip" data-region="asia">Азия</button>
+    <button class="filter-chip" data-region="oceania">Океания</button>
+  </div>
+
+  <div class="server-count"><span id="resultCount">0</span> серверов найдено</div>
+
+  <div class="server-grid" id="serverGrid"></div>
+
+  <div class="no-results" id="noResults">Ничего не найдено в этих глубинах. Попробуй другой запрос.</div>
+
+</div>
+
+<footer style="margin-top: 70px;">
+  <div class="wrap">
+    <div class="footer-bottom">
+      <span>© 2026 Kraken VPN</span>
+      <span>Сделано для тех, кто хочет остаться на глубине</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

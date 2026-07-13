@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kraken — исчезни в глубине</title>
+<meta name="description" content="Kraken VPN. Три зоны шифрования, один туннель — от поверхностного трафика до полной темноты.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none">
+        <path d="M16 3C9 3 4 8.5 4 15c0 4 1.8 6.8 3.2 9.3.5.9 1.8.7 2-.3.4-1.8 1-3.4 1.6-3.4.7 0 1 2.4 1.2 4.6.1 1 1.5 1.2 1.9.2.6-1.6 1.3-3.4 2.1-3.4s1.5 1.8 2.1 3.4c.4 1 1.8.8 1.9-.2.2-2.2.5-4.6 1.2-4.6.6 0 1.2 1.6 1.6 3.4.2 1 1.5 1.2 2-.3C26.2 21.8 28 19 28 15c0-6.5-5-12-12-12Z" stroke="#3fe0d0" stroke-width="1.6" stroke-linejoin="round"/>
+        <circle cx="12.5" cy="13" r="1.3" fill="#3fe0d0"/>
+        <circle cx="19.5" cy="13" r="1.3" fill="#3fe0d0"/>
+      </svg>
+      KRAKEN
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Главная</a>
+      <a href="servers.html">Сервера</a>
+      <a href="pricing.html">Тарифы</a>
+    </div>
+    <a href="pricing.html" class="btn btn-primary">Начать погружение</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <section class="hero">
+    <div>
+      <div class="eyebrow">Туннель · AES-256 · без логов</div>
+      <h1>Твой трафик<br><span>уходит на глубину.</span></h1>
+      <p class="lede">Kraken заворачивает соединение в три слоя шифрования и топит его там, куда не достаёт ни провайдер, ни наблюдатель. Ты остаёшься на поверхности — виден только сам факт, что ты онлайн.</p>
+      <div class="hero-cta">
+        <a href="pricing.html" class="btn btn-primary">Выбрать тариф</a>
+        <a href="#zones" class="btn btn-ghost">Как это работает</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="num">62</div>
+          <div class="lbl">страны</div>
+        </div>
+        <div>
+          <div class="num">0</div>
+          <div class="lbl">записей журнала</div>
+        </div>
+        <div>
+          <div class="num">1.8k+</div>
+          <div class="lbl">узлов сети</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gauge-frame">
+      <div class="gauge-head">
+        <span>ГЛУБИНОМЕР</span>
+        <span>СОСТОЯНИЕ: АКТИВЕН</span>
+      </div>
+      <div class="gauge-track">
+        <div class="signal-dot"></div>
+
+        <div class="gauge-zone zone-surface">
+          <div class="zname">Surface</div>
+          <div class="zdesc">Обычный трафик. IP и провайдер видны любому узлу на пути.</div>
+        </div>
+
+        <div class="gauge-zone zone-twilight">
+          <div class="zname">Twilight</div>
+          <div class="zdesc">Первый слой шифрования. Провайдер видит только факт соединения.</div>
+        </div>
+
+        <div class="gauge-zone zone-midnight">
+          <div class="zname">Midnight</div>
+          <div class="zdesc">Полный туннель Kraken. Ни адрес, ни маршрут не восстановить.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="zones">
+    <div class="section-head">
+      <div class="eyebrow">Три зоны</div>
+      <h2>Чем глубже, тем темнее</h2>
+      <p>Каждая зона — это не маркетинговое название, а реальный этап того, что происходит с пакетом данных на пути от тебя к серверу.</p>
+    </div>
+    <div class="zones-grid">
+      <div class="zone-card">
+        <div class="zi">ZONE 01 · SURFACE</div>
+        <h3>0–200 м</h3>
+        <p>Здесь живёт обычный интернет: DNS-запросы, метаданные, отпечаток устройства. Всё, что видит роутер до включения Kraken.</p>
+      </div>
+      <div class="zone-card">
+        <div class="zi">ZONE 02 · TWILIGHT</div>
+        <h3>200–1000 м</h3>
+        <p>WireGuard-туннель поднят, DNS переключён на приватные резолверы Kraken. Провайдер видит зашифрованный поток без содержимого.</p>
+      </div>
+      <div class="zone-card">
+        <div class="zi">ZONE 03 · MIDNIGHT</div>
+        <h3>1000 м и глубже</h3>
+        <p>Обфускация трафика под обычный HTTPS, ротация выходных узлов и kill switch — соединение обрывается раньше, чем утечёт хоть один пакет.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="eyebrow">Оснащение</div>
+      <h2>Что входит в снаряжение</h2>
+    </div>
+    <div class="feature-strip">
+      <div class="feature-cell">
+        <h4>Kill switch</h4>
+        <p>Разрыв сети раньше, чем раскроется реальный IP, если туннель падает.</p>
+      </div>
+      <div class="feature-cell">
+        <h4>Split tunneling</h4>
+        <p>Выбираешь, какие приложения идут через Kraken, а какие — напрямую.</p>
+      </div>
+      <div class="feature-cell">
+        <h4>Обфускация</h4>
+        <p>Трафик маскируется под обычный HTTPS даже в сетях с глубокой инспекцией пакетов.</p>
+      </div>
+      <div class="feature-cell">
+        <h4>Мультихоп</h4>
+        <p>Маршрут через два независимых узла — второй сервер не знает, кто ты.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="cta-band">
+      <div>
+        <h2>Пора погружаться.</h2>
+        <p>7 дней бесплатно, без карты. Отменить можно из личного кабинета в один клик.</p>
+      </div>
+      <a href="pricing.html" class="btn btn-primary">Начать погружение</a>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h5>Kraken</h5>
+        <p style="max-width: 260px; font-size: 13.5px;">VPN-сервис с трёхуровневым шифрованием и политикой нулевых логов.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Продукт</h5>
+        <a href="servers.html">Сервера</a>
+        <a href="pricing.html">Тарифы</a>
+        <a href="index.html#zones">Как это работает</a>
+      </div>
+      <div class="footer-col">
+        <h5>Компания</h5>
+        <a href="#">О нас</a>
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Условия использования</a>
+      </div>
+      <div class="footer-col">
+        <h5>Поддержка</h5>
+        <a href="#">Центр помощи</a>
+        <a href="#">Написать в поддержку</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Kraken VPN</span>
+      <span>Сделано для тех, кто хочет остаться на глубине</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
